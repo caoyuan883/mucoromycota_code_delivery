@@ -1,0 +1,43 @@
+--- historical/FIG7-12_plot_busco_genome_vs_protein_by_subphylum_A4_v12-8.r
++++ plot_busco_genome_vs_protein_by_subphylum.R
+@@ -11,10 +11,27 @@
+ #       工作表 "1_简表_202株"
+ # =============================================================================
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_busco_genome_vs_protein_by_subphylum.R --input=XLSX [--outdir=DIR]\nXLSX: longest_isoform_busco_genome_protein_mucoromycota_202_v3-2.xlsx, sheet \"1_简表_202株\",\n      columns 现用名, subphylum, dataset, metric, percent\nDefault output folder: <folder of XLSX>/BUSCO_G_vs_P_A4_v12. Without --input a file chooser opens.\nOutputs: Fig_S<tag>_<subphylum>[_partN]_v12.pdf, <stem>_v12_data_check.csv, figure_sizes_v12.csv"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ packages <- c("ggplot2", "dplyr", "tidyr", "readxl", "readr")
+ missing_packages <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+ if (length(missing_packages) > 0) {
+-  install.packages(missing_packages, repos = "https://cloud.r-project.org")
++  stop("Missing R packages (install them first; this script does not install packages): ", paste(missing_packages, collapse = ", "), call. = FALSE)  # [release] was: install.packages()
+ }
+ 
+ library(ggplot2)
+@@ -58,8 +75,9 @@
+ 
+ # ---------------- 读入 ----------------
+ message("请选择 longest_isoform_busco_genome_protein_mucoromycota_202_v3-2.xlsx")
+-input_file <- file.choose()
+-out_dir <- file.path(dirname(input_file), "BUSCO_G_vs_P_A4_v12")
++input_file <- .release_opt("input")  # [release] was: file.choose() only
++if (is.null(input_file)) input_file <- file.choose()
++out_dir <- .release_opt("outdir", file.path(dirname(input_file), "BUSCO_G_vs_P_A4_v12"))  # [release]
+ dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+ input_stem <- tools::file_path_sans_ext(basename(input_file))
+ 

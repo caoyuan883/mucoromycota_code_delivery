@@ -1,0 +1,264 @@
+
+===== RepeatModeler =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/RepeatModeler
+RepeatModeler version 2.0.7
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/share/RepeatModeler/RepeatModeler
+RepeatModeler version 2.0.7
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmodeler-2.0.7-pl5321hdfd78af_0/bin/RepeatModeler
+OSError: [Errno 8] Exec format error: '/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmodeler-2.0.7-pl5321hdfd78af_0/bin/RepeatModeler'
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmodeler-2.0.7-pl5321hdfd78af_0/share/RepeatModeler/RepeatModeler
+OSError: [Errno 8] Exec format error: '/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmodeler-2.0.7-pl5321hdfd78af_0/share/RepeatModeler/RepeatModeler'
+
+===== RepeatMasker =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/RepeatMasker
+Unknown option: version
+RepeatMasker version 4.2.3
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/RepeatMasker - 4.2.3
+NAME
+    RepeatMasker - Mask repetitive DNA
+
+SYNOPSIS
+      RepeatMasker [-options] <seqfiles(s) in fasta format>
+
+DESCRIPTION
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/share/RepeatMasker/RepeatMasker
+Unknown option: version
+RepeatMasker version 4.2.3
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/share/RepeatMasker/RepeatMasker - 4.2.3
+NAME
+    RepeatMasker - Mask repetitive DNA
+
+SYNOPSIS
+      RepeatMasker [-options] <seqfiles(s) in fasta format>
+
+DESCRIPTION
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmasker-4.2.3-pl5321hdfd78af_0/bin/RepeatMasker
+Unknown option: version
+RepeatMasker version 4.2.3
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmasker-4.2.3-pl5321hdfd78af_0/bin/RepeatMasker - 4.2.3
+NAME
+    RepeatMasker - Mask repetitive DNA
+
+SYNOPSIS
+      RepeatMasker [-options] <seqfiles(s) in fasta format>
+
+DESCRIPTION
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmasker-4.2.3-pl5321hdfd78af_0/share/RepeatMasker/RepeatMasker
+Unknown option: version
+RepeatMasker version 4.2.3
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/repeatmasker-4.2.3-pl5321hdfd78af_0/share/RepeatMasker/RepeatMasker - 4.2.3
+NAME
+    RepeatMasker - Mask repetitive DNA
+
+SYNOPSIS
+      RepeatMasker [-options] <seqfiles(s) in fasta format>
+
+DESCRIPTION
+
+===== rmblastn =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/rmblastn
+rmblastn: 2.14.1+
+ Package: blast 2.14.1, build Apr 15 2025 01:44:42
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/rmblast-2.14.1-hdb21ba3_2/bin/rmblastn
+rmblastn: 2.14.1+
+ Package: blast 2.14.1, build Apr 15 2025 01:44:42
+
+===== fasterq-dump =====
+未定位到；不等于没有使用。
+
+===== fastp =====
+未定位到；不等于没有使用。
+
+===== hisat2 =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/tools/hisat2
+/media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/tools/hisat2-align-s version 2.2.1
+64-bit
+Built on compute-0-2.local
+Mon Nov 21 17:30:20 EST 2022
+Compiler: gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) 
+Options: -O3 -m64 -msse2 -funroll-loops -g3 -static -DPOPCNT_CAPABILITY -std=c++11
+Sizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}
+PATH: /usr/bin/hisat2
+/usr/bin/hisat2-align-s version 2.2.1
+64-bit
+Built on Debian
+28 September 2021
+Compiler: gcc version 11.2.0 (Ubuntu 11.2.0-7ubuntu2) 
+Options: -O3   -funroll-loops -g3 -Wdate-time -D_FORTIFY_SOURCE=2 -std=c++11
+Sizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}
+
+===== samtools =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/tools/samtools
+samtools 1.16.1
+Using htslib 1.16
+Copyright (C) 2022 Genome Research Ltd.
+
+Samtools compilation details:
+    Features:       build=configure curses=no 
+    CC:             gcc
+    CPPFLAGS:       
+    CFLAGS:         -Wall -g -O2
+    LDFLAGS:        -static
+PATH: /usr/bin/samtools
+samtools 1.13
+Using htslib 1.13+ds
+Copyright (C) 2021 Genome Research Ltd.
+
+Samtools compilation details:
+    Features:       build=configure curses=yes 
+    CC:             gcc
+    CPPFLAGS:       -frelease  -Wdate-time -D_FORTIFY_SOURCE=2
+    CFLAGS:         -g -O2 -ffile-prefix-map=�BUILDPATH�=. -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security
+    LDFLAGS:        -Wl,-Bsymbolic-functions -flto=auto -Wl,-z,relro -Wl,-z,now
+
+===== braker.pl =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/BRAKER_src/scripts/braker.pl
+braker.pl version 3.0.8
+
+===== augustus =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/AUGUSTUS_src/bin/augustus
+AUGUSTUS (3.5.0) is a gene prediction tool.
+Sources and documentation at https://github.com/Gaius-Augustus/Augustus
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/AUGUSTUS_src/src/augustus
+AUGUSTUS (3.5.0) is a gene prediction tool.
+Sources and documentation at https://github.com/Gaius-Augustus/Augustus
+
+===== gmes_petap.pl =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/aux/GeneMark/gmes_linux_64_4/gmes_petap.pl
+Unknown option: version
+error on command line: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/aux/GeneMark/gmes_linux_64_4/gmes_petap.pl
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/bin/gmes/gmes_petap.pl
+Unknown option: version
+error on command line: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/bin/gmes/gmes_petap.pl
+
+===== gmetp.pl =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/bin/gmetp.pl
+Unknown option: version
+error on command line
+
+===== prothint.py =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/aux/GeneMark/gmes_linux_64_4/ProtHint/bin/prothint.py
+prothint.py 2.6.0
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/bin/gmes/ProtHint/bin/prothint.py
+prothint.py 2.6.0
+
+===== diamond =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/aux/GeneMark/gmes_linux_64_4/ProtHint/dependencies/diamond
+diamond version 0.9.24
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_base/bin/diamond
+diamond version 2.1.24
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/diamond-2.1.24-hf93d47f_0/bin/diamond
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/diamond-2.1.24-hf93d47f_0/bin/diamond: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.31' not found (required by /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/diamond-2.1.24-hf93d47f_0/bin/diamond)
+/media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/diamond-2.1.24-hf93d47f_0/bin/diamond: /lib/x86_64-linux-gnu/libstdc++.so.6: version `CXXABI_1.3.15' not found (required by /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/diamond-2.1.24-hf93d47f_0/bin/diamond)
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/bin/gmes/ProtHint/dependencies/diamond
+diamond version 0.9.24
+
+===== tsebra.py =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/TSEBRA/bin/tsebra.py
+usage: tsebra.py [-h] [-g GTF] [-k KEEP_GTF] [-e HINTFILES] [-c CFG]
+                 [--filter_single_exon_genes] [--ignore_tx_phase]
+                 [-s SCORE_TAB] -o OUT [-q] [-v VERBOSE]
+tsebra.py: error: the following arguments are required: -o/--out
+
+===== compleasm.py =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/compleasm/compleasm.py
+compleasm.py 0.2.8
+
+===== gffread =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/third_party/GeneMark-ETP-main/tools/gffread
+0.12.7
+
+===== busco =====
+未定位到；不等于没有使用。
+
+===== omark =====
+未定位到；不等于没有使用。
+
+===== omamer =====
+未定位到；不等于没有使用。
+
+===== mafft =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/mafft
+v7.526 (2024/Apr/26)
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/mafft-7.526-h4bc722e_0/bin/mafft
+v0.000 != v7.526 (2024/Apr/26)
+
+There is a problem in the configuration of your shell.
+Check the MAFFT_BINARIES environmental variable by
+$ echo $MAFFT_BINARIES
+
+This variable must be *unset*, unless you have installed MAFFT
+with a special configuration.  To unset this variable, type
+$ unset MAFFT_BINARIES
+or
+
+===== clipkit =====
+未定位到；不等于没有使用。
+
+===== trimal =====
+未定位到；不等于没有使用。
+
+===== iqtree3 =====
+未定位到；不等于没有使用。
+
+===== iqtree2 =====
+未定位到；不等于没有使用。
+
+===== iqtree =====
+未定位到；不等于没有使用。
+
+===== emapper.py =====
+未定位到；不等于没有使用。
+
+===== interproscan.sh =====
+未定位到；不等于没有使用。
+
+===== R =====
+PATH: /usr/local/bin/R
+R version 4.4.1 (2024-06-14) -- "Race for Your Life"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+
+===== python3 =====
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/bin/python3
+Python 3.13.13
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_base/bin/python3
+Python 3.10.8
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/envs/glo_repeat/bin/python3
+Python 3.10.20
+PATH: /media/desk16/tly8529/glo_braker_test/08_env/miniconda3/pkgs/python-3.10.20-h3c07f61_0_cpython/bin/python3
+Python 3.10.20
+
+===== TSEBRA / BRAKER 源代码与 Git 信息 =====
+
+DIRECTORY: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/TSEBRA
+git rev-parse HEAD
+fatal: 不是 git 仓库（或者直至挂载点 /media 的任何父目录）
+停止在文件系统边界（未设置 GIT_DISCOVERY_ACROSS_FILESYSTEM）。
+git status --short
+fatal: 不是 git 仓库（或者直至挂载点 /media 的任何父目录）
+停止在文件系统边界（未设置 GIT_DISCOVERY_ACROSS_FILESYSTEM）。
+SCRIPT: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/TSEBRA/bin/best_by_compleasm.py
+SHA256: e01e08daf8fc052747b1319fcdc73a84f321b54272914ecefa20930f1c1e1cfd
+本地补丁位置：
+113:                         assert hmm_to >= hmm_from
+114:                         # ---- v4 patch: skip HMMs that have no score cutoff (mucoromycota_odb12 has some) ----
+115:                         if query_name not in score_cutoff_dict:
+116:                             _full = [k for k in score_cutoff_dict if k.split("at")[0] == query_name]
+117:                             if not _full:
+118:                                 continue
+119:                             query_name = _full[0]
+
+DIRECTORY: /media/desk16/tly8529/glo_braker_test/08_env/braker2_bundle_transfer/src/BRAKER_src
+git rev-parse HEAD
+fatal: 不是 git 仓库（或者直至挂载点 /media 的任何父目录）
+停止在文件系统边界（未设置 GIT_DISCOVERY_ACROSS_FILESYSTEM）。
+git status --short
+fatal: 不是 git 仓库（或者直至挂载点 /media 的任何父目录）
+停止在文件系统边界（未设置 GIT_DISCOVERY_ACROSS_FILESYSTEM）。

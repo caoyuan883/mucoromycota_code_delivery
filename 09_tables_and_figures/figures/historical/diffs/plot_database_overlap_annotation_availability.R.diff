@@ -1,0 +1,34 @@
+--- historical/plot_Fig1a_FINAL_proportional_circles_single_bar.r
++++ plot_database_overlap_annotation_availability.R
+@@ -2,12 +2,30 @@
+ # Requires only ggplot2. No input file is required.
+ # Outputs are saved in the current working directory shown by getwd().
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_database_overlap_annotation_availability.R [--outdir=DIR]\nNo input file: genome counts are constants inside the script (see figures/README.md).\nDefault output folder: current working directory.\nOutputs: Fig1a_FINAL_proportional_circles_single_bar.pdf/.tiff, *_preview.png, Fig1a_FINAL_counts.tsv"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ if (!requireNamespace("ggplot2", quietly = TRUE)) {
+   stop("ggplot2 is not installed.")
+ }
+ library(ggplot2)
+ 
+-output_dir <- getwd()
++output_dir <- .release_opt("outdir", getwd())  # [release] was: getwd()
++dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+ cat("Outputs will be saved in:\n", output_dir, "\n\n", sep = "")
+ 
+ # Final verified counts.

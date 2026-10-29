@@ -1,0 +1,50 @@
+--- historical/plot_Fig1b_BUSCO_landscape_FINAL-2.r
++++ plot_busco_completeness_by_source.R
+@@ -3,9 +3,26 @@
+ # Bottom row: Mortierellomycotina + Glomeromycotina, y-axis 35–100%
+ # Run all in RStudio, then select the local TSV/CSV/XLSX table.
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_busco_completeness_by_source.R --input=TABLE [--outdir=DIR]\nTABLE: TSV/CSV/XLSX with columns subphylum, species_no, species_name_current,\n       genome_BUSCO_C, public_protein_BUSCO_C, braker_protein_BUSCO_C\nDefault output folder: folder of TABLE. Without --input a file chooser opens (original behaviour)."
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ pkgs <- c("ggplot2", "dplyr", "tidyr", "readr", "readxl", "tools", "patchwork")
+ missing <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly = TRUE)]
+-if (length(missing)) install.packages(missing, repos = "https://cloud.r-project.org")
++if (length(missing)) stop("Missing R packages (install them first; this script does not install packages): ", paste(missing, collapse = ", "), call. = FALSE)  # [release] was: install.packages()
+ 
+ library(ggplot2)
+ library(dplyr)
+@@ -15,7 +32,8 @@
+ library(tools)
+ library(patchwork)
+ 
+-input_file <- file.choose()
++input_file <- .release_opt("input")  # [release] was: file.choose() only
++if (is.null(input_file)) input_file <- file.choose()
+ ext <- tolower(file_ext(input_file))
+ 
+ if (ext %in% c("tsv", "txt")) {
+@@ -237,7 +255,8 @@
+ p_final <- assemble_final(show_species = FALSE)
+ p_labelled <- assemble_final(show_species = TRUE)
+ 
+-output_dir <- dirname(normalizePath(input_file))
++output_dir <- .release_opt("outdir", dirname(normalizePath(input_file)))  # [release]
++dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+ 
+ ggsave(
+   file.path(output_dir, "Fig1b_BUSCO_FINAL_two_rows.pdf"),

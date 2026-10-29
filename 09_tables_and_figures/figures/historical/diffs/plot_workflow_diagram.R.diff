@@ -1,0 +1,36 @@
+--- historical/Fig2_workflow_v4-3.r
++++ plot_workflow_diagram.R
+@@ -4,12 +4,31 @@
+ #     (cairo_pdf -> quartz pdf -> base pdf fallback, file existence checked).
+ # Canvas: 140 x 172 mm; Helvetica Bold 7 pt (Scientific Data)
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_workflow_diagram.R [--outdir=DIR]\nNo input file: boxes and text are defined inside the script.\nDefault output folder: RStudio folder chooser if available, else current working directory.\nOutputs: Fig_workflow_v4.pdf, Fig_workflow_v4.png, Fig_workflow_v4.svg (svg only if svglite is installed)"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ packages <- c("ggplot2", "tibble")
+ miss <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+-if (length(miss) > 0) install.packages(miss, repos = "https://cloud.r-project.org")
++if (length(miss) > 0) stop("Missing R packages (install them first; this script does not install packages): ", paste(miss, collapse = ", "), call. = FALSE)  # [release] was: install.packages()
+ library(ggplot2); library(tibble)
+ 
+-out_dir <- if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
++out_dir <- if (!is.null(.release_opt("outdir"))) {  # [release] --outdir first
++  dir.create(.release_opt("outdir"), showWarnings = FALSE, recursive = TRUE); .release_opt("outdir")
++} else if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+   rstudioapi::selectDirectory(caption = "Select output folder for the workflow figure")
+ } else getwd()
+ if (is.null(out_dir) || !dir.exists(out_dir)) out_dir <- getwd()

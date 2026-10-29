@@ -1,0 +1,65 @@
+--- historical/Fig14_protein_tree_annotation_v3-10.r
++++ plot_protein_tree_annotation.R
+@@ -6,6 +6,23 @@
+ ## 与 v2 相同的输入文件（同一文件夹）：
+ ##   P_occ80_g90.treefile  Fig2_tip_data.tsv  Fig2_conflict_splits.tsv  Fig2_conflict_regions.tsv
+ ## =============================================================================
++
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_protein_tree_annotation.R --input-dir=DIR [--outdir=DIR]\nDIR must contain P_*.treefile and Fig2_tip_data.tsv; optional Fig2_conflict_splits.tsv, Fig2_conflict_regions.tsv\nDefault output folder: DIR. Without --input-dir the script folder (RStudio) or a file chooser is used.\nOutputs: Fig2_protein_tree_annotation.pdf/.png, Fig2_protein_tree_annotation_a_tree.pdf, Fig2_protein_tree_annotation_b_violin.pdf"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
+ 
+ ## ---- 0. settings ------------------------------------------------------------
+ label_size       <- 1.5
+@@ -27,23 +44,18 @@
+ out_prefix       <- "Fig2_protein_tree_annotation"
+ 
+ ## ---- 1. packages ------------------------------------------------------------
+-pkgs_cran <- c("ape","ggplot2","dplyr","readr","stringr","ggnewscale","patchwork","scales","rstudioapi")
++## [release] rstudioapi is optional (only used inside tryCatch); no automatic installation
++pkgs_cran <- c("ape","ggplot2","dplyr","readr","stringr","ggnewscale","patchwork","scales")
+ pkgs_bioc <- c("ggtree","treeio")
+ need <- setdiff(c(pkgs_cran, pkgs_bioc), rownames(installed.packages()))
+-if (length(need)) {
+-  if (length(intersect(need, pkgs_cran))) install.packages(intersect(need, pkgs_cran))
+-  if (length(intersect(need, pkgs_bioc))) {
+-    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+-    BiocManager::install(intersect(need, pkgs_bioc), update = FALSE, ask = FALSE)
+-  }
+-}
++if (length(need)) stop("Missing R packages (install them first; this script does not install packages): ", paste(need, collapse = ", "), call. = FALSE)
+ suppressPackageStartupMessages({
+   library(ape); library(treeio); library(ggtree); library(ggplot2); library(ggnewscale)
+   library(dplyr); library(readr); library(stringr); library(patchwork); library(scales)
+ })
+ 
+ ## ---- 2. files ---------------------------------------------------------------
+-work_dir <- tryCatch(dirname(rstudioapi::getSourceEditorContext()$path), error = function(e) "")
++work_dir <- .release_opt("input-dir", tryCatch(dirname(rstudioapi::getSourceEditorContext()$path), error = function(e) ""))  # [release] --input-dir
+ has_all <- function(d) nzchar(d) && dir.exists(d) &&
+   length(list.files(d, pattern = "^P_.*treefile$")) && file.exists(file.path(d, "Fig2_tip_data.tsv"))
+ if (!has_all(work_dir)) {
+@@ -51,7 +63,9 @@
+   work_dir <- dirname(file.choose())
+ }
+ if (!has_all(work_dir)) stop("文件夹里缺少 P_*.treefile 或 Fig2_tip_data.tsv: ", work_dir)
+-setwd(work_dir)
++.release_out <- .release_opt("outdir", work_dir)  # [release] was: setwd(work_dir)
++dir.create(.release_out, showWarnings = FALSE, recursive = TRUE)
++setwd(.release_out)
+ p_file     <- list.files(work_dir, pattern = "^P_.*treefile$", full.names = TRUE)[1]
+ meta_file  <- file.path(work_dir, "Fig2_tip_data.tsv")
+ split_file <- file.path(work_dir, "Fig2_conflict_splits.tsv")

@@ -1,0 +1,62 @@
+--- historical/FIG4_plot_circular_G_tree_v7_noring-5.r
++++ plot_genome_species_tree.R
+@@ -8,9 +8,26 @@
+ ##       若脚本所在文件夹里找不到 G_*.treefile / tip_metadata*.tsv，会弹窗让你选。
+ ## =============================================================================
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_genome_species_tree.R --tree=G_TREEFILE --metadata=TIP_METADATA_TSV [--outdir=DIR]\nG_TREEFILE: IQ-TREE treefile of the genome-based (G) tree, e.g. G_occ80_g90.treefile\nTIP_METADATA_TSV: tip_metadata.tsv (same table as the protein-tree script; columns: see figures/figure_index.tsv)\nDefault output folder: folder of the tree file. Without options the original search/chooser is used.\nOutputs: Fig_<tree name>_v7_noring.pdf/.png"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ ## ---- 0. settings you may change --------------------------------------------
+-tree_file  <- ""          # 留空=自动找/弹窗；也可直接写路径，如 "~/Desktop/G_occ80_g90.treefile"
+-meta_file  <- ""          # 留空=自动找/弹窗；即 P 树用的 tip_metadata.tsv
++tree_file  <- .release_opt("tree", "")          # [release] --tree; 留空=自动找/弹窗；也可直接写路径，如 "~/Desktop/G_occ80_g90.treefile"
++meta_file  <- .release_opt("metadata", "")          # [release] --metadata; 留空=自动找/弹窗；即 P 树用的 tip_metadata.tsv
+ label_size       <- 1.5
+ shade_alpha      <- 0.14  # lineage shading (tree + names), same value = seamless
+ label_band_scale <- 1.00  # >1 if names overflow, <1 if too much empty space
+@@ -25,16 +42,11 @@
+ `%||%` <- function(a, b) if (length(a) && !is.na(a[1]) && nzchar(a[1])) a else b
+ 
+ ## ---- 1. packages -----------------------------------------------------------
+-pkgs_cran <- c("ape", "ggplot2", "dplyr", "readr", "stringr", "rstudioapi")
++## [release] rstudioapi is optional (only used inside tryCatch); no automatic installation
++pkgs_cran <- c("ape", "ggplot2", "dplyr", "readr", "stringr")
+ pkgs_bioc <- c("ggtree", "treeio")
+ need <- setdiff(c(pkgs_cran, pkgs_bioc), rownames(installed.packages()))
+-if (length(need)) {
+-  if (length(intersect(need, pkgs_cran))) install.packages(intersect(need, pkgs_cran))
+-  if (length(intersect(need, pkgs_bioc))) {
+-    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+-    BiocManager::install(intersect(need, pkgs_bioc), update = FALSE, ask = FALSE)
+-  }
+-}
++if (length(need)) stop("Missing R packages (install them first; this script does not install packages): ", paste(need, collapse = ", "), call. = FALSE)
+ suppressPackageStartupMessages({
+   library(ape); library(treeio); library(ggtree)
+   library(ggplot2); library(dplyr); library(readr); library(stringr)
+@@ -66,7 +78,9 @@
+   }
+ }
+ meta_file <- normalizePath(path.expand(meta_file))
+-setwd(work_dir)
++.release_out <- .release_opt("outdir", work_dir)  # [release] was: setwd(work_dir)
++dir.create(.release_out, showWarnings = FALSE, recursive = TRUE)
++setwd(.release_out)
+ if (!nzchar(out_prefix))
+   out_prefix <- paste0("Fig_", sub("\\.treefile$|\\.tre$|\\.nwk$", "", basename(tree_file)), "_v7_noring")
+ message("工作文件夹: ", work_dir, "\n树文件: ", basename(tree_file),

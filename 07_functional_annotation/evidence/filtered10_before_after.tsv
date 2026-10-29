@@ -1,0 +1,11 @@
+strain	n_before	n_after	n_removed	ips_pct_before	ips_pct_after	egg_pct_before	egg_pct_after	union_pct_before	union_pct_after	go_union_pct_before	go_union_pct_after	antifam_before	antifam_after
+Acaulospora_colombiana	20276	11416	8860	57.78	67.48	63.72	70.58	67.08	74.3	49.05	57.57	3	1
+Apophysomyces_sp._BC1015	13662	12188	1474	79.83	79.36	89.44	89.39	90.46	90.47	68.35	68.92	3	1
+Apophysomyces_sp._BC1034	13332	11876	1456	80.13	79.37	89.75	89.56	90.64	90.5	68.97	69.0	5	2
+Gigaspora_margarita	19418	19397	21	65.55	65.56	68.81	68.81	74.24	74.23	52.26	52.27	0	0
+Gigaspora_rosea	20295	20282	13	65.11	65.12	69.69	69.7	74.91	74.91	52.14	52.13	0	0
+Gryganskiella_cystojenkinii	14372	14285	87	72.97	72.96	71.66	71.62	78.07	78.05	60.21	60.21	0	0
+Mortierella_sp._GBA39	19359	16194	3165	77.26	74.56	78.8	75.32	82.95	80.24	61.46	60.49	1	1
+Oehlia_diaphana	18159	17388	771	65.45	64.24	72.71	71.58	76.45	75.48	51.17	50.52	2	1
+Podila_clonocystis	13726	13531	195	76.54	76.38	78.52	78.32	82.92	82.75	64.21	64.25	1	1
+Rhizophagus_prolifer	33000	28115	4885	62.54	58.74	73.85	70.51	76.69	73.72	46.29	43.73	7	5

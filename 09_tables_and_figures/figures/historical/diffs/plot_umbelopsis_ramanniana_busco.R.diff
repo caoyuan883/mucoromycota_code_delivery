@@ -1,0 +1,42 @@
+--- historical/FIG3_Umbelopsis_ramanniana_BUSCO_plot_v2-4.r
++++ plot_umbelopsis_ramanniana_busco.R
+@@ -8,17 +8,36 @@
+ #         Checked by CVD simulation (Machado 2009, severity 1.0): min pairwise dE76 = 27.8
+ #         (deuteranopia); CIELAB L* = 55.1 / 27.6 / 77.3 / 45.9, so categories stay separable in greyscale.
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_umbelopsis_ramanniana_busco.R --input=TSV [--outdir=DIR]\nTSV: Umbelopsis_ramanniana_BUSCO_completeness*.tsv with columns dataset, tool, C_pct, S_pct,\n     D_pct, F_pct, M_pct, n_buscos, lineage\nDefault output folder: folder of TSV. Without --input a file chooser opens (original behaviour).\nOutputs: <stem>_plot_v2.pdf/.png/.svg, <stem>_data_check.csv"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ packages <- c("ggplot2", "dplyr", "tidyr", "readr")
+ missing_packages <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+-if (length(missing_packages) > 0) install.packages(missing_packages, repos = "https://cloud.r-project.org")
++if (length(missing_packages) > 0) stop("Missing R packages (install them first; this script does not install packages): ", paste(missing_packages, collapse = ", "), call. = FALSE)  # [release] was: install.packages()
+ library(ggplot2); library(dplyr); library(tidyr); library(readr)
+ 
+ message("Select Umbelopsis_ramanniana_BUSCO_completeness*.tsv")
+-input_file <- if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
++input_file <- if (!is.null(.release_opt("input"))) .release_opt("input") else  # [release] --input first
++  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+   rstudioapi::selectFile(caption = "Select Umbelopsis BUSCO TSV", filter = "TSV (*.tsv)")
+ } else file.choose()
+ stopifnot(!is.null(input_file), file.exists(input_file))
+-out_dir <- dirname(input_file)
++out_dir <- .release_opt("outdir", dirname(input_file))  # [release] was: dirname(input_file)
++dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
+ input_stem <- tools::file_path_sans_ext(basename(input_file))
+ 
+ dat <- read.delim(input_file, check.names = FALSE, stringsAsFactors = FALSE, strip.white = TRUE)

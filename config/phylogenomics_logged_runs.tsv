@@ -1,0 +1,8 @@
+# Settings of the four trees as recorded in their IQ-TREE logs (08_phylogenomics/evidence/iqtree_logs/; Command, Seed, Time, alignment and end-of-run lines).
+# Occupancy and column-gap thresholds are matrix-construction settings; they are encoded in the matrix names and are not written in the IQ-TREE logs.
+# The executable path in the logs is local to the original workstation; 08_phylogenomics/run_iqtree_occ80.sh takes it from IQ.
+tree	matrix_source	input_matrix	seq_type	taxa	sites	model	support	threads	memory	seed	iqtree_version_in_log	run_start	run_end	occupancy_threshold	max_col_gap	busco_lineage	log_file
+P_occ80_g90	BUSCO single-copy proteins from annotated proteomes (P)	supermatrix_P_occ80_g90.fasta	AA	207	430514	JTT+F+G4	-B 1000 -alrt 1000 -bnni	20	80G	12345	3.1.0	Thu Sep 17 22:31:18 2026	Wed Sep 23 21:39:22 2026	0.80	0.9	fungi_odb12	08_phylogenomics/evidence/iqtree_logs/P_occ80_g90.log
+G_occ80_g90	BUSCO genome mode (G)	supermatrix_G_occ80_g90.fasta	AA	207	391827	JTT+F+G4	-B 1000 -alrt 1000 -bnni	20	80G	12345	3.1.0	Sun Sep 20 17:51:26 2026	Sun Sep 27 07:36:32 2026	0.80	0.9	fungi_odb12	08_phylogenomics/evidence/iqtree_logs/G_occ80_g90.log
+P_occ90_g90	BUSCO single-copy proteins from annotated proteomes (P)	supermatrix_P_occ90_g90.fasta	AA	207	236754	JTT+F+G4	-B 1000 -alrt 1000 -bnni	16	45G	12345	3.1.0	Thu Sep 24 16:04:08 2026	Fri Oct 2 01:09:09 2026	0.90	0.9	fungi_odb12	08_phylogenomics/evidence/iqtree_logs/P_occ90_g90.log
+G_occ90_g90	BUSCO genome mode (G)	supermatrix_G_occ90_g90.fasta	AA	207	220274	JTT+F+G4	-B 1000 -alrt 1000 -bnni	16	45G	12345	3.1.0	Thu Sep 24 16:04:20 2026	Thu Oct 1 19:48:49 2026	0.90	0.9	fungi_odb12	08_phylogenomics/evidence/iqtree_logs/G_occ90_g90.log

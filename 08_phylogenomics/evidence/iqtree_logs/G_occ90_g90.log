@@ -1,0 +1,341 @@
+IQ-TREE version 3.1.0 for Linux x86 64-bit built Mar 12 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    iyun85 (AVX2, FMA3, 251 GB RAM)
+Command: /media/desk16/tly8529/iqtree3_busco70/bin/iqtree-3.1.0-Linux/bin/iqtree3_intel -s supermatrix_G_occ90_g90.fasta -st AA -m JTT+F+G4 -B 1000 -alrt 1000 -bnni -T 16 -mem 45G -seed 12345 --prefix G_occ90_g90
+Seed:    12345 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Sep 24 16:04:20 2026
+Kernel:  AVX+FMA - 16 threads (72 CPU cores detected)
+
+Reading alignment file supermatrix_G_occ90_g90.fasta ... Fasta format detected
+Reading fasta file: done in 0.89277 secs using 91.98% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 1.51391 secs using 69.45% CPU
+Alignment has 207 sequences with 220274 columns, 204427 distinct patterns
+181308 parsimony-informative, 14499 singleton sites, 24467 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.184733 secs using 1216% CPU
+   1  Absidia_caerulea                 23.34%    failed      0.00%
+   2  Absidia_cylindrospora            35.77%    failed      0.00%
+   3  Absidia_glauca                   27.14%    failed      0.00%
+   4  Absidia_healeyae                 30.04%    failed      0.00%
+   5  Absidia_repens                   26.46%    failed      0.00%
+   6  Absidia_sp.YW-2025a              20.52%    failed      0.00%
+   7  Absidia_sp.YW-2025b              30.15%    failed      0.00%
+   8  Absidia_sp._UoMAU379             30.54%    failed      0.00%
+   9  Acaulospora_colombiana           35.46%    failed      0.00%
+  10  Acaulospora_morrowiae            38.75%    failed      0.00%
+  11  Actinomortierella_ambigua        15.27%    failed      0.00%
+  12  Actinomortierella_capitata       11.95%    failed      0.00%
+  13  Actinomortierella_wolfii         12.81%    failed      0.00%
+  14  Actinomucor_elegans              16.37%    failed      0.00%
+  15  Ambispora_gerdemannii            21.50%    failed      0.00%
+  16  Apophysomyces_elegans            17.36%    failed      0.00%
+  17  Apophysomyces_ossiformis         15.19%    failed      0.00%
+  18  Apophysomyces_sp._BC1015         14.49%    failed      0.00%
+  19  Apophysomyces_sp._BC1021         14.99%    failed      0.00%
+  20  Apophysomyces_sp._BC1034         14.92%    failed      0.00%
+  21  Apophysomyces_trapeziformis      15.20%    failed      0.00%
+  22  Apophysomyces_variabilis         12.86%    failed      0.00%
+  23  Appendiculispora_leptoticha      28.73%    failed      0.00%
+  24  Aspergillus_nidulans             19.75%    failed      0.00%
+  25  Backusella_australiensis         16.36%    failed      0.00%
+  26  Backusella_circina               17.83%    failed      0.00%
+  27  Backusella_lamprospora           13.07%    failed      0.00%
+  28  Backusella_liffmaniae            15.68%    failed      0.00%
+  29  Backusella_luteola               18.51%    failed      0.00%
+  30  Backusella_macrospora            17.35%    failed      0.00%
+  31  Backusella_mclennaniae           15.62%    failed      0.00%
+  32  Backusella_morwellensis          14.72%    failed      0.00%
+  33  Backusella_parvicylindrica       17.20%    failed      0.00%
+  34  Backusella_psychrophila          17.82%    failed      0.00%
+  35  Backusella_sp._ASU-2019c         17.18%    failed      0.00%
+  36  Backusella_tarrabulga            14.65%    failed      0.00%
+  37  Backusella_tuberculispora        21.29%    failed      0.00%
+  38  Backusella_westeae               17.32%    failed      0.00%
+  39  Benjaminiella_poitrasii          13.57%    failed      0.00%
+  40  Bifiguratus_adelaidae            20.70%    failed      0.00%
+  41  Blakeslea_trispora               16.72%    failed      0.00%
+  42  Chaetocladium_brefeldii          13.53%    failed      0.00%
+  43  Chlamydoabsidia_padenii          19.01%    failed      0.00%
+  44  Choanephora_cucurbitarum         16.40%    failed      0.00%
+  45  Choanephora_infundibulifera      19.40%    failed      0.00%
+  46  Circinella_minor                 13.25%    failed      0.00%
+  47  Circinella_umbellata             13.56%    failed      0.00%
+  48  Coemansia_reversa                30.88%    failed      0.00%
+  49  Cokeromyces_recurvatus           16.28%    failed      0.00%
+  50  Conidiobolus_coronatus           33.86%    failed      0.00%
+  51  Coprinopsis_cinerea              19.84%    failed      0.00%
+  52  Cryptocalciella_humilis          15.97%    failed      0.00%
+  53  Cunninghamella_bertholletiae     11.44%    failed      0.00%
+  54  Cunninghamella_blakesleeana      12.01%    failed      0.00%
+  55  Cunninghamella_echinulata        22.00%    failed      0.00%
+  56  Cunninghamella_elegans           13.08%    failed      0.00%
+  57  Dentiscutata_erythropus          26.44%    failed      0.00%
+  58  Dichotomocladium_elegans         12.75%    failed      0.00%
+  59  Dichotomocladium_robustum        14.25%    failed      0.00%
+  60  Dissophora_decumbens             12.29%    failed      0.00%
+  61  Dissophora_globulifera           15.46%    failed      0.00%
+  62  Dissophora_ornata                13.77%    failed      0.00%
+  63  Diversispora_eburnea             19.12%    failed      0.00%
+  64  Diversispora_epigaea             17.03%    failed      0.00%
+  65  Ellisomyces_anomalus             13.36%    failed      0.00%
+  66  Entomortierella_beljakovae       15.21%    failed      0.00%
+  67  Entomortierella_chlamydospora    17.22%    failed      0.00%
+  68  Entomortierella_echinosphaera    14.36%    failed      0.00%
+  69  Entomortierella_lignicola        14.74%    failed      0.00%
+  70  Entomortierella_parvispora       14.62%    failed      0.00%
+  71  Entrophospora_sp.SA101           28.70%    failed      0.00%
+  72  Fennellomyces_linderi            12.51%    failed      0.00%
+  73  Fennellomyces_sp._T-0311         12.85%    failed      0.00%
+  74  Funneliformis_caledonius         25.38%    failed      0.00%
+  75  Funneliformis_geosporus          19.32%    failed      0.00%
+  76  Funneliformis_mosseae            24.21%    failed      0.00%
+  77  Gamsiella_multidivaricata        15.73%    failed      0.00%
+  78  Geosiphon_pyriformis             23.56%    failed      0.00%
+  79  Gigaspora_margarita              20.10%    failed      0.00%
+  80  Gigaspora_rosea                  18.93%    failed      0.00%
+  81  Gilbertella_persicaria           15.48%    failed      0.00%
+  82  Glomus_cerebriforme              19.14%    failed      0.00%
+  83  Gongronella_butleri              16.46%    failed      0.00%
+  84  Gongronella_sp._w5               14.06%    failed      0.00%
+  85  Gryganskiella_cystojenkinii      13.21%    failed      0.00%
+  86  Halteromyces_radiatus            13.67%    failed      0.00%
+  87  Haplosporangium_sp._Z_11         13.99%    failed      0.00%
+  88  Haplosporangium_sp._Z_27         13.88%    failed      0.00%
+  89  Haplosporangium_sp._Z_767        13.75%    failed      0.00%
+  90  Helicostylum_pulchrum            13.61%    failed      0.00%
+  91  Hesseltinella_vesiculosa         14.12%    failed      0.00%
+  92  Lentamyces_parricidus            18.81%    failed      0.00%
+  93  Lentamyces_zychae                15.49%    failed      0.00%
+  94  Lichtheimia_corymbifera          22.79%    failed      0.00%
+  95  Lichtheimia_hyalospora           12.42%    failed      0.00%
+  96  Lichtheimia_ornata               12.13%    failed      0.00%
+  97  Lichtheimia_ramosa               12.19%    failed      0.00%
+  98  Lichtheimia_sp._PT1902           12.09%    failed      0.00%
+  99  Linnemannia_amoeboidea           14.54%    failed      0.00%
+ 100  Linnemannia_camargensis          12.73%    failed      0.00%
+ 101  Linnemannia_elongata             14.66%    failed      0.00%
+ 102  Linnemannia_exigua               18.69%    failed      0.00%
+ 103  Linnemannia_fluviae              15.18%    failed      0.00%
+ 104  Linnemannia_gamsii               12.48%    failed      0.00%
+ 105  Linnemannia_hyalina              12.65%    failed      0.00%
+ 106  Linnemannia_schmuckeri           11.51%    failed      0.00%
+ 107  Linnemannia_zychae               12.69%    failed      0.00%
+ 108  Lobosporangium_transversale      12.95%    failed      0.00%
+ 109  Lunasporangiospora_selenospora   31.41%    failed      0.00%
+ 110  Modicella_reniformis             35.35%    failed      0.00%
+ 111  Mortierella_alpina               22.88%    failed      0.00%
+ 112  Mortierella_antarctica           13.95%    failed      0.00%
+ 113  Mortierella_claussenii           14.43%    failed      0.00%
+ 114  Mortierella_hygrophila           13.35%    failed      0.00%
+ 115  Mortierella_polycephala          16.07%    failed      0.00%
+ 116  Mortierella_sp.BCC40632          13.76%    failed      0.00%
+ 117  Mortierella_sp._14UC             14.13%    failed      0.00%
+ 118  Mortierella_sp._AD010            15.96%    failed      0.00%
+ 119  Mortierella_sp._AD011            17.00%    failed      0.00%
+ 120  Mortierella_sp._AD031            15.76%    failed      0.00%
+ 121  Mortierella_sp._AD032            17.33%    failed      0.00%
+ 122  Mortierella_sp._AD094            17.81%    failed      0.00%
+ 123  Mortierella_sp._AM989            14.45%    failed      0.00%
+ 124  Mortierella_sp._BESC-360         12.53%    failed      0.00%
+ 125  Mortierella_sp._GBA30            12.19%    failed      0.00%
+ 126  Mortierella_sp._GBA35            13.93%    failed      0.00%
+ 127  Mortierella_sp._GBA39            14.32%    failed      0.00%
+ 128  Mortierella_sp._GBA43            14.94%    failed      0.00%
+ 129  Mortierella_sp._GBAus27b         13.96%    failed      0.00%
+ 130  Mortierella_sp._KOD1030          15.67%    failed      0.00%
+ 131  Mortierella_sp._NVP41            14.33%    failed      0.00%
+ 132  Mortierella_sp._NVP85            17.13%    failed      0.00%
+ 133  Mucor_ambiguus                   13.71%    failed      0.00%
+ 134  Mucor_atramentarius              12.39%    failed      0.00%
+ 135  Mucor_bainieri                   11.95%    failed      0.00%
+ 136  Mucor_circinelloides             12.85%    failed      0.00%
+ 137  Mucor_cordense                   20.59%    failed      0.00%
+ 138  Mucor_endophyticus               15.37%    failed      0.00%
+ 139  Mucor_flavus                     14.95%    failed      0.00%
+ 140  Mucor_fragilis                   14.16%    failed      0.00%
+ 141  Mucor_fuscus                     15.90%    failed      0.00%
+ 142  Mucor_heterogamus                55.40%    failed      0.00%
+ 143  Mucor_hiemalis                   20.57%    failed      0.00%
+ 144  Mucor_indicus                    15.66%    failed      0.00%
+ 145  Mucor_irregularis                20.95%    failed      0.00%
+ 146  Mucor_lanceolatus                16.64%    failed      0.00%
+ 147  Mucor_lusitanicus                21.28%    failed      0.00%
+ 148  Mucor_mucedo                     13.80%    failed      0.00%
+ 149  Mucor_piriformis                 14.05%    failed      0.00%
+ 150  Mucor_plumbeus                   13.32%    failed      0.00%
+ 151  Mucor_racemosus                  13.13%    failed      0.00%
+ 152  Mucor_saturninus                 15.00%    failed      0.00%
+ 153  Mucor_sp._M7501                  13.16%    failed      0.00%
+ 154  Mucor_velutinosus                12.25%    failed      0.00%
+ 155  Mycotypha_africana               14.33%    failed      0.00%
+ 156  Mycotypha_indica                 13.22%    failed      0.00%
+ 157  Neurospora_crassa                19.48%    failed      0.00%
+ 158  Oehlia_diaphana                  18.18%    failed      0.00%
+ 159  Paraglomus_brasilianum           24.73%    failed      0.00%
+ 160  Paraglomus_occultum              26.30%    failed      0.00%
+ 161  Parasitella_parasitica           15.18%    failed      0.00%
+ 162  Phascolomyces_articulosus        12.78%    failed      0.00%
+ 163  Phycomyces_blakesleeanus         13.51%    failed      0.00%
+ 164  Phycomyces_nitens                13.21%    failed      0.00%
+ 165  Pilaira_anomala                  13.17%    failed      0.00%
+ 166  Pilobolus_umbonatus              14.78%    failed      0.00%
+ 167  Podila_clonocystis               13.42%    failed      0.00%
+ 168  Podila_epicladia                 16.49%    failed      0.00%
+ 169  Podila_epigama                   17.43%    failed      0.00%
+ 170  Podila_horticola                 12.63%    failed      0.00%
+ 171  Podila_minutissima               13.44%    failed      0.00%
+ 172  Podila_verticillata              14.56%    failed      0.00%
+ 173  Radiomyces_spectabilis           11.74%    failed      0.00%
+ 174  Rhizomucor_miehei                14.94%    failed      0.00%
+ 175  Rhizomucor_pusillus              14.82%    failed      0.00%
+ 176  Rhizophagus_clarus               22.03%    failed      0.00%
+ 177  Rhizophagus_irregularis          18.45%    failed      0.00%
+ 178  Rhizophagus_prolifer             40.86%    failed      0.00%
+ 179  Rhizophagus_sp.LPA8_1_AMF        21.31%    failed      0.00%
+ 180  Rhizopus_arrhizus                22.77%    failed      0.00%
+ 181  Rhizopus_azygosporus             45.27%    failed      0.00%
+ 182  Rhizopus_delemar                 21.67%    failed      0.00%
+ 183  Rhizopus_microsporus             22.86%    failed      0.00%
+ 184  Rhizopus_sp.FBL578               23.42%    failed      0.00%
+ 185  Rhizopus_sp._TYR1                27.49%    failed      0.00%
+ 186  Rhizopus_stolonifer              28.98%    failed      0.00%
+ 187  Saksenaea_oblongispora           14.27%    failed      0.00%
+ 188  Saksenaea_vasiformis             16.27%    failed      0.00%
+ 189  Spinellus_fusiger                18.15%    failed      0.00%
+ 190  Sporodiniella_umbellata          20.24%    failed      0.00%
+ 191  Syncephalastrum_contaminatum     15.21%    failed      0.00%
+ 192  Syncephalastrum_monosporum       13.76%    failed      0.00%
+ 193  Syncephalastrum_racemosum        14.92%    failed      0.00%
+ 194  Syncephalastrum_sp._PYS2702      15.39%    failed      0.00%
+ 195  Syncephalastrum_sp._PYS2703      15.39%    failed      0.00%
+ 196  Syzygites_megalocarpus           16.63%    failed      0.00%
+ 197  Thamnidium_elegans               15.14%    failed      0.00%
+ 198  Thermomucor_indicae-seudaticae   14.60%    failed      0.00%
+ 199  Umbelopsis_angularis             11.89%    failed      0.00%
+ 200  Umbelopsis_isabellina            12.94%    failed      0.00%
+ 201  Umbelopsis_ramanniana            17.18%    failed      0.00%
+ 202  Umbelopsis_sp._AD052             14.28%    failed      0.00%
+ 203  Umbelopsis_sp._M5902             11.77%    failed      0.00%
+ 204  Umbelopsis_sp._PMI_123           14.75%    failed      0.00%
+ 205  Umbelopsis_sp._WA50703           12.79%    failed      0.35%
+ 206  Umbelopsis_vinacea               17.50%    failed      2.52%
+ 207  Zychaea_mexicana                 16.25%    failed      0.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                            17.56%  207 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: minimal branch length is reduced to 0.000000453980 for long alignment
+NOTE: Syncephalastrum_sp._PYS2703 is identical to Syncephalastrum_sp._PYS2702 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.872655 secs using 178.6% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 262.292 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 12345)...
+
+NOTE: 26933 MB RAM (26 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -17522322.753
+2. Current log-likelihood: -17199809.325
+3. Current log-likelihood: -17188729.433
+4. Current log-likelihood: -17188055.147
+5. Current log-likelihood: -17187968.839
+6. Current log-likelihood: -17187956.305
+7. Current log-likelihood: -17187954.460
+8. Current log-likelihood: -17187954.181
+Optimal log-likelihood: -17187954.105
+Gamma shape alpha: 0.644
+Parameters optimization took 8 rounds (2553.995 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 3.10636 secs using 1280% CPU
+Computing ML distances took 24.674705 sec (of wall-clock time) 42.800997 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0407103 secs
+Constructing RapidNJ tree: done in 0.0234537 secs using 17.35% CPU
+Computing RapidNJ tree took 0.064285 sec (of wall-clock time) 0.004135 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -17206539.711
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 18592.621 second
+Computing log-likelihood of 98 initial trees ... 10823.461 seconds
+Current best score: -17187954.105
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -17187181.366
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -17186670.053
+Iteration 10 / LogL: -17187817.849 / Time: 14h:51m:12s
+Iteration 20 / LogL: -17186920.117 / Time: 20h:30m:36s
+Finish initializing candidate tree set (3)
+Current best tree score: -17186670.053 / CPU time: 68531.490
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -17186890.444 / Time: 26h:41m:16s (66h:4m:16s left)
+Iteration 40 / LogL: -17187325.754 / Time: 32h:41m:56s (51h:51m:44s left)
+Iteration 50 / LogL: -17187594.016 / Time: 39h:0m:20s (41h:18m:47s left)
+Iteration 60 / LogL: -17186704.361 / Time: 45h:1m:42s (32h:0m:0s left)
+Iteration 70 / LogL: -17186829.584 / Time: 53h:19m:46s (24h:41m:50s left)
+Iteration 80 / LogL: -17186773.035 / Time: 57h:46m:57s (16h:4m:12s left)
+Iteration 90 / LogL: -17187204.237 / Time: 61h:52m:48s (8h:19m:59s left)
+Iteration 100 / LogL: -17186707.614 / Time: 64h:54m:44s (1h:18m:35s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 477 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 169h:24m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17186670.053
+Optimal log-likelihood: -17186670.050
+Gamma shape alpha: 0.644
+Parameters optimization took 1 rounds (709.694 sec)
+BEST SCORE FOUND : -17186670.050
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+2624.193 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file G_occ90_g90.splits.nex
+Total tree length: 34.997
+
+Total number of iterations: 103
+CPU time used for tree search: 3762771.758 sec (1045h:12m:51s)
+Wall-clock time used for tree search: 604589.456 sec (167h:56m:29s)
+Total CPU time used: 3811061.642 sec (1058h:37m:41s)
+Total wall-clock time used: 613236.533 sec (170h:20m:36s)
+UFBoot trees printed to G_occ90_g90.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file G_occ90_g90.splits.nex...
+207 taxa and 429 splits.
+Consensus tree written to G_occ90_g90.contree
+Reading input trees file G_occ90_g90.contree
+Log-likelihood of consensus tree: -17186670.182
+
+Analysis results written to: 
+  IQ-TREE report:                G_occ90_g90.iqtree
+  Maximum-likelihood tree:       G_occ90_g90.treefile
+  Likelihood distances:          G_occ90_g90.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          G_occ90_g90.splits.nex
+  Consensus tree:                G_occ90_g90.contree
+  UFBoot trees:                  G_occ90_g90.ufboot
+  Screen log file:               G_occ90_g90.log
+
+Date and Time: Thu Oct  1 19:48:49 2026

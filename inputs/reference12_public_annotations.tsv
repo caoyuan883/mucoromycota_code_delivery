@@ -1,0 +1,15 @@
+# Twelve genome records compared with their public annotations (06_quality_and_filtering/reference12_validation/).
+# Source: table in the manuscript text. Record No., source identifier, species and subphylum agree with Workbook 3 (strain of record 184 is written "NRRL2409" in Workbook 3).
+Record No.	release_label	species	strain	source_identifier	braker_system	subphylum	public_annotation_source
+4	Absidia_repens	Absidia repens	NRRL 1336	GCA_002105175.1	BRAKER3	Mucoromycotina	JGI; Absrep1 v1.0
+76	Lichtheimia_hyalospora	Lichtheimia hyalospora	FSU 10163	GCA_025094155.1	BRAKER2	Mucoromycotina	JGI; Lichy1
+176	Backusella_lamprospora	Backusella lamprospora	NRRL 3300	JGI:Baclam1_v1.0	BRAKER2	Mucoromycotina	JGI; FilteredModels1
+184	Lentamyces_parricidus	Lentamyces parricidus	NRRL 2409	JGI:Lenpar1_v1.0	BRAKER3	Mucoromycotina	JGI; FilteredModels1
+193	Mucor_cordense	Mucor cordense	RSA 1222	JGI:Kircor1_v1.0	BRAKER2	Mucoromycotina	JGI; FilteredModels1
+199	Syzygites_megalocarpus	Syzygites megalocarpus	MES 1450	JGI:Syzme1_v1.0	BRAKER2	Mucoromycotina	JGI; FilteredModels1
+88	Lobosporangium_transversale	Lobosporangium transversale	NRRL 3116	GCF_002105155.1	BRAKER3	Mortierellomycotina	JGI Lobtra1; RefSeq propagated annotation
+180	Dissophora_decumbens	Dissophora decumbens	NRRL 22416	JGI:Disdec1_v1.0	BRAKER3	Mortierellomycotina	JGI; FilteredModels1
+182	Entomortierella_echinosphaera	Entomortierella echinosphaera	CBS 575.75	JGI:Entech1_v1.0	BRAKER2	Mortierellomycotina	JGI; FilteredModels1
+188	Podila_minutissima	Podila minutissima	AD051	JGI:Mormin1_1_v1.0	BRAKER3	Mortierellomycotina	JGI; FilteredModels1
+60	Geosiphon_pyriformis	Geosiphon pyriformis	uo1	GCA_016748015.1	BRAKER2	Glomeromycotina	University of Ottawa; funannotate
+147	Rhizophagus_irregularis	Rhizophagus irregularis	DAOM-197198	GCF_026210795.1	BRAKER3	Glomeromycotina	RBG Kew; BRAKER+PASA

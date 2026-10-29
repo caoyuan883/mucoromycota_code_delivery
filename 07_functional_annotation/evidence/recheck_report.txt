@@ -1,0 +1,35 @@
+项目	正文	复算	结果
+release_total	2618164	2618164	PASS
+prefilter_total	2639091	2639091	PASS
+removed_total	20927	20927	PASS
+n_filtered_strains	10	10	PASS
+pct_ips	76.4	76.40	PASS
+pct_em	81.9	81.89	PASS
+pct_any	85.0	85.00	PASS
+pct_go_any	65.1	65.07	PASS
+pct_ko	38.2	38.15	PASS
+pct_go_em	36.7	36.74	PASS
+pct_go_ips	61.9	61.94	PASS
+median_any_Muc	91.2	91.22	PASS
+median_any_Mor	82.4	82.36	PASS
+median_any_Glo	72.2	72.25	DIFF
+n_Muc	123	123	PASS
+n_Mor	57	57	PASS
+n_Glo	22	22	PASS
+lowest6_all_Glo	True	True	PASS
+lowest6_min	60.9	60.89	PASS
+lowest6_max	67.4	67.35	PASS
+antifam_kept	66	66	PASS
+antifam_kept_strains	38	38	PASS
+antifam_removed	10	10	PASS
+antifam_ratio	19	18.96	PASS
+Rhizophagus_prolifer_before	76.7	76.69	PASS
+Rhizophagus_prolifer_after	73.7	73.72	PASS
+Acaulospora_colombiana_removed_em	54.9	54.88	PASS
+Acaulospora_colombiana_before	67.1	67.08	PASS
+Acaulospora_colombiana_after	74.3	74.30	PASS
+
+最低 6 株：Dentiscutata_erythropus 60.89% (Glo); Funneliformis_caledonium 63.89% (Glo); Funneliformis_geosporum 65.76% (Glo); Diversispora_eburnea 67.14% (Glo); Appendiculispora_leptoticha 67.27% (Glo); Diversispora_epigaea 67.35% (Glo)
+10 株被移除蛋白的 eggNOG 注释率（%）：Gigaspora_rosea 46.2; Acaulospora_colombiana 54.9; Gigaspora_margarita 66.7; Gryganskiella_cystojenkinii 78.2; Apophysomyces_sp._BC1015 89.8; Apophysomyces_sp._BC1034 91.3; Podila_clonocystis 92.3; Rhizophagus_prolifer 93.1; Mortierella_sp._GBA39 96.6; Oehlia_diaphana 98.2
+
+共 29 项，DIFF 1 项

@@ -1,0 +1,5 @@
+InterProScan 5.78-109.0（本地运行，-dp 关闭预计算查找）
+参数: -appl Pfam,PANTHER,SUPERFAMILY,CDD,SMART,ProSitePatterns,ProSiteProfiles,AntiFam -goterms -dp -f TSV
+成员库: Pfam 38.2; PANTHER 19.0; SUPERFAMILY 1.75; CDD 3.21; SMART 9.0; PROSITE Patterns/Profiles 2026_01; AntiFam 8.0
+Java: OpenJDK 11.0.32.1
+输入: 202 株代表性蛋白集（删除全部终止符 *，ID 不变；md5 见 faa.md5）

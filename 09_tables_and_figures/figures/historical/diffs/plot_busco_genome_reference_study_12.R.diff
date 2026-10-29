@@ -1,0 +1,31 @@
+--- historical/FIG13_plot_BUSCO_12_GRT_A4-9.r
++++ plot_busco_genome_reference_study_12.R
+@@ -5,9 +5,26 @@
+ # Uses base R + grid. No ggplot2, Cairo or XQuartz needed for the PDF.
+ # In RStudio: open this script, click Source, then choose the input TSV.
+ 
++## ---- [release adaptation] command-line options --------------------------------
++## Added for the code release (see figures/plot_sources.tsv). Without options the
++## original interactive behaviour is unchanged. Data handling and styling are unchanged.
++.release_usage <- "Usage: Rscript plot_busco_genome_reference_study_12.R --input=TSV [--outdir=PARENT_DIR]\nTSV: busco_12strains_GTR_long_v1.tsv with columns sample, sample_order, subphylum, mode, lineage,\n     dataset_label, metric, percent, complete_percent, n_buscos\nDefault parent folder: folder of TSV; a new BUSCO_12_GRT_<timestamp> folder is created inside it.\nOutputs: Fig_BUSCO_12_GRT_A4.pdf/.png, check CSVs, figure_caption.txt, R_sessionInfo.txt"
++.release_args <- commandArgs(trailingOnly = TRUE)
++.release_opt <- function(name, default = NULL) {
++  key <- paste0("--", name, "=")
++  hit <- .release_args[startsWith(.release_args, key)]
++  if (length(hit)) return(path.expand(sub(key, "", hit[length(hit)], fixed = TRUE)))
++  default
++}
++if (any(.release_args %in% c("--help", "-h"))) {
++  cat(.release_usage, "\n", sep = "")
++  quit(save = "no", status = 0)
++}
++## ---- [end release adaptation] ---------------------------------------------------
++
+ # ---------------- Editable settings ----------------
+-INPUT_FILE <- ""                   # Empty: choose a file interactively.
+-OUTPUT_PARENT <- ""                # Empty: save beside the input table.
++INPUT_FILE <- .release_opt("input", "")                   # [release] --input; Empty: choose a file interactively.
++OUTPUT_PARENT <- .release_opt("outdir", "")                # [release] --outdir; Empty: save beside the input table.
+ PAGE_W_MM <- 210
+ PAGE_H_MM <- 297
+ LEFT_MM <- 15

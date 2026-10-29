@@ -1,0 +1,33 @@
+--- historical/Fig5_contamination_filtering_omark-6.py
++++ plot_omark_contamination_filtering.py
+@@ -24,6 +24,21 @@
+ NAME_ROT_B = 60          # b 中物种名旋转角度
+ # ===================================================
+ 
++# ---- [release adaptation] command-line options (see figures/plot_sources.tsv) ----
++import sys
++_RELEASE_USAGE = """Usage: python3 plot_omark_contamination_filtering.py --input=TSV [--outdir=DIR]
++TSV: contamination_filtering_before_after_10strains_v2.tsv (columns: see figures/figure_index.tsv)
++Default output folder: folder of TSV. Without --input the original default path / file dialog is used.
++Outputs: Fig_contamination_filtering_omark.pdf/.svg/.png"""
++if any(a in ("-h", "--help") for a in sys.argv[1:]):
++    print(_RELEASE_USAGE); raise SystemExit(0)
++_release_opts = dict(a[2:].split("=", 1) for a in sys.argv[1:] if a.startswith("--") and "=" in a)
++if "input" in _release_opts:
++    INFILE = os.path.expanduser(_release_opts["input"])
++    if not os.path.exists(INFILE):
++        raise SystemExit("input not found: " + INFILE)
++# ---- [end release adaptation] ----
++
+ if not os.path.exists(INFILE):
+     try:
+         import tkinter as tk
+@@ -36,6 +51,8 @@
+ if not INFILE or not os.path.exists(INFILE):
+     raise SystemExit("找不到输入表格, 请修改脚本顶部 INFILE")
+ OUTDIR = os.path.dirname(os.path.abspath(INFILE))
++if "outdir" in _release_opts:  # [release] --outdir
++    OUTDIR = os.path.abspath(os.path.expanduser(_release_opts["outdir"])); os.makedirs(OUTDIR, exist_ok=True)
+ 
+ F_SINGLE, F_DUP, MISSING = "#46bea1", "#cfee8e", "#ed1c5a"
+ CONSISTENT, INCONSISTENT = "#3db7e9", "#8a5df1"

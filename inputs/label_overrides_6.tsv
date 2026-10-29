@@ -1,0 +1,10 @@
+# Release labels for the six Workbook 3 records that keep the source name
+# (naming exception, see docs/DATA_LINKAGE.md). The current Workbook 3 export resolves these
+# labels by the normal rules; this table is kept as an explicit record (derive_subphylum_map.py --overrides).
+Record No.	label	note
+41	Cunninghamella_bertholletiae	source name retained
+94	Mortierella_hygrophila	source name retained
+111	Mucor_ambiguus	source name retained
+127	Mucor_velutinosus	source name retained
+151	Rhizopus_azygosporus	source name retained
+152	Rhizopus_delemar	source name retained

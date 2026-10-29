@@ -1,0 +1,202 @@
+Absidia cylindrospora	Absidia cylindrospora
+Absidia glauca	Absidia glauca
+Absidia healeyae	Absidia healeyae
+Absidia repens	Absidia repens
+Absidia sp. UoMAU379	Absidia sp. UoMAU379
+Absidia sp. YW-2025a	Absidia sp. YW-2025a
+Absidia sp. YW-2025b	Absidia sp. YW-2025b
+Acaulospora colombiana	Acaulospora colombiana
+Acaulospora morrowiae	Acaulospora morrowiae
+Actinomucor elegans	Actinomucor elegans
+Ambispora gerdemannii	Ambispora gerdemannii
+Ambispora leptoticha	Appendiculispora leptoticha
+Apophysomyces elegans	Apophysomyces elegans
+Apophysomyces ossiformis	Apophysomyces ossiformis
+Apophysomyces sp. BC1015	Apophysomyces sp. BC1015
+Apophysomyces sp. BC1021	Apophysomyces sp. BC1021
+Apophysomyces sp. BC1034	Apophysomyces sp. BC1034
+Apophysomyces trapeziformis	Apophysomyces trapeziformis
+Apophysomyces variabilis	Apophysomyces variabilis
+Backusella australiensis	Backusella australiensis
+Backusella circina	Backusella circina
+Backusella liffmaniae	Backusella liffmaniae
+Backusella luteola	Backusella luteola
+Backusella macrospora	Backusella macrospora
+Backusella mclennaniae	Backusella mclennaniae
+Backusella morwellensis	Backusella morwellensis
+Backusella parvicylindrica	Backusella parvicylindrica
+Backusella psychrophila	Backusella psychrophila
+Backusella sp. ASU-2019c	Backusella sp. ASU-2019c
+Backusella tarrabulga	Backusella tarrabulga
+Backusella tuberculispora	Backusella tuberculispora
+Backusella westeae	Backusella westeae
+Bifiguratus adelaidae	Bifiguratus adelaidae
+Blakeslea trispora	Blakeslea trispora
+Chlamydoabsidia padenii	Chlamydoabsidia padenii
+Choanephora cucurbitarum	Choanephora cucurbitarum
+Choanephora infundibulifera	Choanephora infundibulifera
+Circinella minor	Circinella minor
+Circinella umbellata	Circinella umbellata
+Cokeromyces recurvatus	Cokeromyces recurvatus
+Cunninghamella bertholletiae	Cunninghamella elegans
+Cunninghamella blakesleeana	Cunninghamella blakesleeana
+Cunninghamella echinulata	Cunninghamella echinulata
+Cunninghamella elegans	Cunninghamella elegans
+Dentiscutata erythropus	Dentiscutata erythropus
+Dichotomocladium elegans	Dichotomocladium elegans
+Dissophora globulifera	Dissophora globulifera
+Dissophora ornata	Dissophora ornata
+Diversispora eburnea	Diversispora eburnea
+Diversispora epigaea	Diversispora epigaea
+Entomortierella beljakovae	Entomortierella beljakovae
+Entomortierella chlamydospora	Entomortierella chlamydospora
+Entomortierella lignicola	Entomortierella lignicola
+Entomortierella parvispora	Entomortierella parvispora
+Entrophospora sp. SA101	Entrophospora sp. SA101
+Fennellomyces sp. T-0311	Fennellomyces sp. T-0311
+Funneliformis caledonium	Funneliformis caledonius
+Funneliformis geosporum	Funneliformis geosporus
+Funneliformis mosseae	Funneliformis mosseae
+Geosiphon pyriformis	Geosiphon pyriformis
+Gigaspora margarita	Gigaspora margarita
+Gigaspora rosea	Gigaspora rosea
+Gilbertella persicaria	Gilbertella persicaria
+Glomus cerebriforme	Glomus cerebriforme
+Gongronella butleri	Gongronella butleri
+Gongronella sp. w5	Gongronella sp. w5
+Gryganskiella cystojenkinii	Gryganskiella cystojenkinii
+Halteromyces radiatus	Halteromyces radiatus
+Haplosporangium gracile	Linnemannia camargensis
+Haplosporangium sp. Z 11	Haplosporangium sp. Z 11
+Haplosporangium sp. Z 27	Haplosporangium sp. Z 27
+Haplosporangium sp. Z 767	Haplosporangium sp. Z 767
+Helicostylum pulchrum	Helicostylum pulchrum
+Hesseltinella vesiculosa	Hesseltinella vesiculosa
+Lichtheimia corymbifera	Lichtheimia corymbifera
+Lichtheimia hyalospora	Lichtheimia hyalospora
+Lichtheimia ornata	Lichtheimia ornata
+Lichtheimia ramosa	Lichtheimia ramosa
+Lichtheimia sp. PT1902	Lichtheimia sp. PT1902
+Linnemannia amoeboidea	Linnemannia amoeboidea
+Linnemannia elongata	Linnemannia elongata
+Linnemannia exigua	Linnemannia exigua
+Linnemannia fluviae	Linnemannia fluviae
+Linnemannia gamsii	Linnemannia gamsii
+Linnemannia hyalina	Linnemannia hyalina
+Linnemannia schmuckeri	Linnemannia schmuckeri
+Linnemannia zychae	Linnemannia zychae
+Lobosporangium transversale	Lobosporangium transversale
+Lunasporangiospora selenospora	Lunasporangiospora selenospora
+Modicella reniformis	Modicella reniformis
+Mortierella alpina	Mortierella alpina
+Mortierella antarctica	Mortierella antarctica
+Mortierella claussenii	Mortierella claussenii
+Mortierella hygrophila	Linnemannia hyalina
+Mortierella polycephala	Mortierella polycephala
+Mortierella sp. 14UC	Mortierella sp. 14UC
+Mortierella sp. AD010	Mortierella sp. AD010
+Mortierella sp. AD011	Mortierella sp. AD011
+Mortierella sp. AD031	Mortierella sp. AD031
+Mortierella sp. AD032	Mortierella sp. AD032
+Mortierella sp. AD094	Mortierella sp. AD094
+Mortierella sp. AM989	Mortierella sp. AM989
+Mortierella sp. BCC40632	Mortierella sp. BCC40632
+Mortierella sp. GBA30	Mortierella sp. GBA30
+Mortierella sp. GBA35	Mortierella sp. GBA35
+Mortierella sp. GBA39	Mortierella sp. GBA39
+Mortierella sp. GBA43	Mortierella sp. GBA43
+Mortierella sp. GBAus27b	Mortierella sp. GBAus27b
+Mortierella sp. NVP41	Mortierella sp. NVP41
+Mortierella sp. NVP85	Mortierella sp. NVP85
+Mucor ambiguus	Mucor circinelloides
+Mucor atramentarius	Mucor atramentarius
+Mucor bainieri	Mucor bainieri
+Mucor circinelloides	Mucor circinelloides
+Mucor flavus	Mucor flavus
+Mucor fragilis	Mucor fragilis
+Mucor hiemalis	Mucor hiemalis
+Mucor indicus	Mucor indicus
+Mucor irregularis	Mucor irregularis
+Mucor lusitanicus	Mucor lusitanicus
+Mucor mucedo	Mucor mucedo
+Mucor piriformis	Mucor piriformis
+Mucor plumbeus	Mucor plumbeus
+Mucor racemosus	Mucor racemosus
+Mucor saturninus	Mucor saturninus
+Mucor sp. M7501	Mucor sp. M7501
+Mucor velutinosus	Mucor circinelloides
+Mycotypha africana	Mycotypha africana
+Oehlia diaphana	Oehlia diaphana
+Paraglomus brasilianum	Paraglomus brasilianum
+Paraglomus occultum	Paraglomus occultum
+Parasitella parasitica	Parasitella parasitica
+Phascolomyces articulosus	Phascolomyces articulosus
+Phycomyces blakesleeanus	Phycomyces blakesleeanus
+Phycomyces nitens	Phycomyces nitens
+Pilaira anomala	Pilaira anomala
+Pilobolus umbonatus	Pilobolus umbonatus
+Podila clonocystis	Podila clonocystis
+Podila epicladia	Podila epicladia
+Podila epigama	Podila epigama
+Podila horticola	Podila horticola
+Podila verticillata	Podila verticillata
+Radiomyces spectabilis	Radiomyces spectabilis
+Rhizomucor miehei	Rhizomucor miehei
+Rhizomucor pusillus	Rhizomucor pusillus
+Rhizophagus clarus	Rhizophagus clarus
+Rhizophagus irregularis	Rhizophagus irregularis
+Rhizophagus prolifer	Rhizophagus prolifer
+Rhizophagus sp. LPA8_1_AMF	Rhizophagus sp. LPA8_1_AMF
+Rhizopus arrhizus	Rhizopus arrhizus
+Rhizopus azygosporus	Rhizopus microsporus
+Rhizopus delemar	Rhizopus arrhizus
+Rhizopus microsporus	Rhizopus microsporus
+Rhizopus sp. FBL578	Rhizopus sp. FBL578
+Rhizopus stolonifer	Rhizopus stolonifer
+Saksenaea oblongispora	Saksenaea oblongispora
+Saksenaea vasiformis	Saksenaea vasiformis
+Spinellus fusiger	Spinellus fusiger
+Sporodiniella umbellata	Sporodiniella umbellata
+Syncephalastrum contaminatum	Syncephalastrum contaminatum
+Syncephalastrum monosporum	Syncephalastrum monosporum
+Syncephalastrum racemosum	Syncephalastrum racemosum
+Syncephalastrum sp. PYS2702	Syncephalastrum sp. PYS2702
+Syncephalastrum sp. PYS2703	Syncephalastrum sp. PYS2703
+Thamnidium elegans	Thamnidium elegans
+Thermomucor indicae-seudaticae	Thermomucor indicae-seudaticae
+Umbelopsis isabellina	Umbelopsis isabellina
+Umbelopsis ramanniana	Umbelopsis ramanniana
+Umbelopsis sp. AD052	Umbelopsis sp. AD052
+Umbelopsis sp. M5902	Umbelopsis sp. M5902
+Umbelopsis sp. PMI_123	Umbelopsis sp. PMI_123
+Umbelopsis sp. WA50703	Umbelopsis sp. WA50703
+Umbelopsis vinacea	Umbelopsis vinacea
+Zychaea mexicana	Zychaea mexicana
+Absidia caerulea	Absidia caerulea
+Backusella lamprospora	Backusella lamprospora
+Benjaminiella poitrasii	Benjaminiella poitrasii
+Chaetocladium brefeldii	Chaetocladium brefeldii
+Dichotomocladium robustum	Dichotomocladium robustum
+Dissophora decumbens	Dissophora decumbens
+Ellisomyces anomalus	Ellisomyces anomalus
+Entomortierella echinosphaera	Entomortierella echinosphaera
+Fennellomyces linderi	Fennellomyces linderi
+Lentamyces parricidus	Lentamyces parricidus
+Lentamyces zychae	Lentamyces zychae
+Mortierella ambigua	Actinomortierella ambigua
+Mortierella capitata	Actinomortierella capitata
+Mortierella minutissima	Podila minutissima
+Mortierella multidivaricata	Gamsiella multidivaricata
+Mortierella sp. BESC-360	Mortierella sp. BESC-360
+Mortierella sp. KOD_1030	Mortierella sp. KOD_1030
+Mortierella wolfii	Actinomortierella wolfii
+Mucor cordense	Mucor cordense
+Mucor endophyticus	Mucor endophyticus
+Mucor fuscus	Mucor fuscus
+Mucor heterogamus	Mucor heterogamus
+Mucor lanceolatus	Mucor lanceolatus
+Mycotypha indica	Mycotypha indica
+Syzygites megalocarpus	Syzygites megalocarpus
+Umbelopsis angularis	Umbelopsis angularis
+Cryptocalciella humilis	Cryptocalciella humilis
+Rhizopus sp. TYR1	Rhizopus sp. TYR1
